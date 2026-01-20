@@ -29,14 +29,13 @@ Developed a Convolutional Neural Network (CNN) to automatically detect drug-indu
 - Data Augmentation: Rotation, flipping, zoom, brightness adjustment
 
 ## 🚀 Project Structure
-- `notebooks/`: Jupyter notebooks for EDA, preprocessing, training, and evaluation
 - `src/`: Modular Python scripts for production-ready code
 - `results/`: Model performance metrics and visualizations
 - `data/`: Sample images and dataset documentation
 
 ## 📈 Results & Visualizations
 ![Confusion Matrix](results/figures/confusion_matrix.png)
-![Training Accuracy](results/figures/accuracy_curve.png)
+![Training Accuracy](results/figures/accuracy.png)
 
 ## 🔬 Methodology
 1. **Data Collection:** 1,272 retinal OCT scans from clinical datasets
@@ -63,7 +62,7 @@ pip install -r requirements.txt
 ## 💻 Usage
 ````python
 # Run exploratory analysis
-jupyter notebook notebooks/01_exploratory_analysis.ipynb
+python hcq_retinopathy_cnn.py
 
 # Train model
 python src/train.py --epochs 50 --batch_size 32
